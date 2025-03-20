@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="icon" href="src/images/favicon-quotation.png" type="image/png" />
+  <title>Quote Explorer</title>
+</head>
+
+<body>
+  <div class="quote-background">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.5 205.08">
+      <path
+        d="M56.74,102.2h4.79c12.99,0,24.66,4.96,35.03,14.87,10.37,9.91,15.55,22.28,15.55,37.08s-5.19,26.61-15.55,36.06c-10.37,9.46-23.19,14.18-38.45,14.18-16.64,0-30.48-6.67-41.53-20C5.52,171.07,0,152.1,0,127.49c0-22.56,4.84-43.69,14.53-63.4,9.68-19.71,21.53-35.32,35.55-46.83C64.09,5.76,76.56,0,87.5,0c7.29,0,12.99,2.17,17.09,6.49,4.1,4.33,6.15,9.91,6.15,16.75,0,10.03-4.44,17.43-13.33,22.22-12.08,6.61-21.65,14.36-28.71,23.24-7.07,8.89-11.06,20.05-11.96,33.5ZM207.81,102.2h4.44c12.76,0,24.32,4.96,34.69,14.87,10.37,9.91,15.55,22.28,15.55,37.08s-5.19,26.44-15.55,36.23c-10.37,9.8-23.19,14.7-38.45,14.7-16.87,0-30.76-6.84-41.7-20.51s-16.41-32.69-16.41-57.08c0-17.54,2.85-34.06,8.54-49.56,5.69-15.49,13.04-28.99,22.05-40.5,9-11.5,18.68-20.62,29.05-27.34,10.37-6.72,19.65-10.08,27.86-10.08,7.52,0,13.27,2.11,17.26,6.32,3.98,4.22,5.98,9.86,5.98,16.92,0,10.25-4.44,17.66-13.33,22.22-12.53,7.07-21.99,14.87-28.37,23.41-6.38,8.54-10.25,19.65-11.62,33.33Z" />
+    </svg>
+  </div>
+  <div class="container">
+    <header>
+      <h1>Quote Explorer</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <div class="form-group">
+          <form id="quote-explorer-form">
+            <input type="text" placeholder="Enter a topic" autofocus required autocomplete="off" class="topic"
+              id="topic" />
+            <button type="submit" class="submit-button">
+              <img src="src/images/icon-magnifying-glass.svg" alt="Search" class="button-icon" />
+            </button>
+          </form>
+          <div class="hint">e.g., love, courage, or art</div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
+      </div>
+    </main>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/A-Ldt" target="_blank"> Alina Linscheidt</a>,
+      is
+      <a href="" target="_blank"> open-sourced on GitHub</a>
+      and
+      <a href="" target="_blank"> hosted on Netlify</a>.
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
